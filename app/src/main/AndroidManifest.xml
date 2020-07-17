@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.viba.olokart_vendors">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:icon="@mipmap/ic_launcher_olokart"
+        android:logo="@mipmap/ic_launcher_olokart"
+        android:roundIcon="@mipmap/ic_launcher_olokart_round"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PredefinedProducts"></activity>
+        <activity android:name=".Notification" />
+        <activity android:name=".HelpandSupport" />
+        <activity android:name=".Rateus" />
+        <activity android:name=".Desclaimer" />
+        <activity android:name=".TermsandConditions" />
+        <activity android:name=".About_us" />
+        <activity
+            android:name=".ProductsAdded"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".RecentOrders"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Statistics"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AddNewProducts"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".SellerRegister" />
+        <activity android:name=".ChangeProfile" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SellerEditActivity" />
+        <activity
+            android:name=".AddProductsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SellerAddActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".SellerLoginActivity" />
+        <activity android:name=".SellerLocation" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

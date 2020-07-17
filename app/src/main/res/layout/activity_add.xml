@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerAddActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relative_search">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:layout_marginTop="-150dp"
+                    android:layout_marginStart="-18dp"
+                    android:layout_marginEnd="-18dp"
+                    android:src="@drawable/add_products_design" />
+                    <TextView
+                        android:id="@+id/snameCat"
+                        style="@style/Widget.AppCompat.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Store Name"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/snameCat"
+                        android:layout_centerHorizontal="true">
+                    <TextView
+                        android:id="@+id/scityCat"
+                        style="@style/Widget.AppCompat.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Store City - "
+                        android:textColor="@android:color/white"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/szipCat"
+                        style="@style/Widget.AppCompat.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@id/scityCat"
+                        android:text="szip"
+                        android:textColor="@android:color/white"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/montserrat"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textSize="15sp" />
+                    </RelativeLayout>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginEnd="28dp"
+                        app:cardElevation="8dp"
+                        android:elevation="4dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="82dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/category_search"
+                            android:hint="Search"
+                            android:textColor="#4d4d4d"
+                            android:padding="10dp"
+                            android:drawablePadding="4dp"
+                            android:fontFamily="@font/montserrat"
+                            android:paddingStart="25dp"
+                            android:textColorHint="#4d4d4d"
+                            android:background="@drawable/shape"
+                            android:drawableEnd="@drawable/ic_baseline_search_24"
+                            android:textSize="18dp"/>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/Widget.AppCompat.TextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/relative_search"
+                            android:text=" Add Products by Categories"
+                            android:textColor="#4d4d4d"
+                            android:fontFamily="@font/montserrat"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textSize="15sp" />
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/add_cat_recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView2"
+                            android:layout_marginTop="20dp" />
+
+
+
+
+
+
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/nav_add"
+        android:fitsSystemWindows="true"
+        android:layout_alignParentBottom="true"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        android:background="@drawable/bottom_shape"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_nav_menu"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

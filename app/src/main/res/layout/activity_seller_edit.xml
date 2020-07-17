@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerEditActivity">
+
+    <ScrollView
+        android:layout_width="408dp"
+        android:layout_height="607dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray"
+                android:elevation="5dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/edit_product_image"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/selection_band_overlay" />
+
+                    <TextView
+                        android:id="@+id/edit_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:hint="Product Name"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp">
+
+
+                        <EditText
+                            android:id="@+id/product_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:hint=" Add Brand Name"
+                            android:fontFamily="@font/montserrat"
+                            android:padding="10dp"
+                            android:background="@drawable/edittextbackground"
+                            android:paddingStart="25dp"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/product_descp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/product_brand"
+                            android:layout_marginTop="12dp"
+                            android:hint="Add Description"
+                            android:background="@drawable/edittextbackground"
+                            android:fontFamily="@font/montserrat"
+                            android:padding="10dp"
+                            android:paddingStart="25dp"
+                            android:inputType="textMultiLine"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Edit_btn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/button_style"
+        android:text="Save Changes"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

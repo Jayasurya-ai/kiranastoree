@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".PredefinedProducts">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:padding="3dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/addpredefinedImage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/stationary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addpredefinedName"
+                        android:text="Product name"
+                        android:layout_toEndOf="@id/addpredefinedImage"
+                       android:layout_centerVertical="true"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat"
+                        android:singleLine="false"
+                        android:textColor="#7E7E7E"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginStart="20dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/newlin1"
+                        android:layout_marginTop="8dp">
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:background="@drawable/linear_backgroud"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Quantity "
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/montserrat"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <EditText
+                                android:id="@+id/ProductQuant"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="1dp"
+                                android:fontFamily="@font/montserrat"
+                                android:hint="Total Qty"
+                                android:inputType="number"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="X"
+                                android:fontFamily="@font/montserrat"
+                                android:layout_gravity="center"
+                                android:textColor="@android:color/black"
+                                android:layout_marginStart="3dp"/>
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:id="@+id/FixedQuant"
+                                android:layout_gravity="center"
+                                android:entries="@array/spin_dimen"
+                                android:layout_marginStart="1dp"/>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/add_product_quant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:text="No. of Products:"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spin_addProduct"
+                                android:layout_width="80dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="2dp"
+                                android:entries="@array/spin_quant"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="MRP :"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edit_addProductprice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="3dp"
+                                android:hint="Price /1 Qty"
+                                android:inputType="number"
+                                android:textColor="#7E7E7E"
+                                android:textColorHint="@android:color/darker_gray"
+                                android:textSize="12sp" />
+
+
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <Button
+                                android:id="@+id/check_addProductname1"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="3dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/button_style"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Save"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp" />
+                            <Button
+                                android:id="@+id/add_quant"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/button_style"
+                                android:fontFamily="@font/montserrat"
+                                android:text="+"
+                                android:layout_marginEnd="15dp"                            android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:padding="5dp"
+                        android:background="@drawable/linear_backgroud"
+
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/newlin2">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Quantity "
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/montserrat"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <EditText
+                                android:id="@+id/ProductQuant2"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="1dp"
+                                android:fontFamily="@font/montserrat"
+                                android:hint="Total Qty"
+                                android:inputType="number"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="X"
+                                android:fontFamily="@font/montserrat"
+                                android:layout_gravity="center"
+                                android:textColor="@android:color/black"
+                                android:layout_marginStart="3dp"/>
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:id="@+id/FixedQuant2"
+                                android:layout_gravity="center"
+                                android:entries="@array/spin_dimen"
+                                android:layout_marginStart="1dp"/>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/add_product_quant2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:text="No. of Products:"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp" />
+
+                            <Spinner
+                                android:layout_width="80dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/spin_addProduct2"
+                                android:entries="@array/spin_quant"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:layout_marginStart="2dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MRP :"
+                                android:fontFamily="@font/montserrat"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/edit_addProductprice2"
+                                android:hint="Price /1 Qty"
+                                android:inputType="number"
+                                android:layout_marginEnd="3dp"
+                                android:layout_gravity="center"
+                                android:textColor="#7E7E7E"
+                                android:layout_marginStart="5dp"
+                                android:textColorHint="@android:color/darker_gray"
+                                android:textSize="12sp"/>
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/add_quant2"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/button_style"
+                                android:fontFamily="@font/montserrat"
+                                android:text="+"
+                                android:layout_marginEnd="15dp"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+                            <Button
+                                android:id="@+id/check_addProductname2"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/button_style"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Add"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp" />
+                            <Button
+                                android:id="@+id/hide_quant2"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="15dp"
+                                android:background="@drawable/button_style"
+                                android:fontFamily="@font/montserrat"
+                                android:text="-"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                        </RelativeLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="@drawable/linear_backgroud"
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/newlin3">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quantity "
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"
+                            android:layout_marginStart="10dp"/>
+
+                        <EditText
+                            android:id="@+id/ProductQuant3"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:fontFamily="@font/montserrat"
+                            android:hint="Total Qty"
+                            android:inputType="number"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="X"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/black"
+                            android:layout_marginStart="3dp"/>
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:id="@+id/FixedQuant3"
+                            android:layout_gravity="center"
+                            android:entries="@array/spin_dimen"
+                            android:layout_marginStart="1dp"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/add_product_quant3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:text="No. of Products:"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                        <Spinner
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/spin_addProduct3"
+                            android:entries="@array/spin_quant"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_marginStart="2dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MRP :"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"
+                            android:layout_marginStart="10dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edit_addProductprice3"
+                            android:hint="Price /1 Qty"
+                            android:inputType="number"
+                            android:layout_marginEnd="3dp"
+                            android:layout_gravity="center"
+                            android:textColor="#7E7E7E"
+                            android:layout_marginStart="5dp"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/check_addProductname3"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/button_style"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Add"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+                        <Button
+                            android:id="@+id/hide_quant3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="15dp"
+                            android:background="@drawable/button_style"
+                            android:fontFamily="@font/montserrat"
+                            android:text="-"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SellerLocation">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_container"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="275dp"
+                    android:layout_marginTop="-100dp"
+                    android:layout_marginStart="-50dp"
+                    android:layout_marginEnd="-50dp"
+                    android:src="@drawable/register_designb" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="275dp"
+                    android:layout_marginTop="-110dp"
+                    android:layout_marginStart="-50dp"
+                    android:layout_marginEnd="-50dp"
+                    android:src="@drawable/register_designa" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="275dp"
+                    android:layout_marginTop="-120dp"
+                    android:layout_marginStart="-50dp"
+                    android:layout_marginEnd="-50dp"
+                    android:src="@drawable/register_design" />
+
+                <TextView
+                    android:id="@+id/title_seller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="Vendor\nOn-Board"
+                    android:textColor="@android:color/white"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/viewRegister"
+                    android:layout_below="@id/title_seller"
+                    android:background="@android:color/white"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginEnd="160dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewRegister"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/abeezee"
+                    android:gravity="center"
+                    android:text="Please Set Location and then Save"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Address"
+                android:textColor="#47A626"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:id="@+id/address"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/edittextbackground"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Store Address"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="City"
+                android:textColor="#47A626"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:id="@+id/city"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/edittextbackground"
+                android:drawableLeft="@drawable/ic_city"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="City"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="State"
+                android:textColor="#47A626"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:id="@+id/state"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/edittextbackground"
+                android:drawableLeft="@drawable/ic_state"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="State"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ziptxt"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="Zip Code"
+                    android:textColor="#47A626"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ziptxt"
+                    android:id="@+id/zip"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/edittextbackground"
+                    android:drawableLeft="@drawable/ic_zip"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Zip"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/countrTxt"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="35dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="Country"
+                    android:textColor="#47A626"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/countrTxt"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/ctry"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edittextbackground"
+                    android:drawableLeft="@drawable/ic_country"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Country"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            <Button
+                android:id="@+id/save_location"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:onClick="saveSellerloc"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:background="@drawable/button_style"
+                android:text="Set Location" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat"
+                android:onClick="saveSellerData"
+                android:textSize="15dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_style"
+                android:text="Save" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

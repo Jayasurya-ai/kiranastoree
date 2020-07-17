@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    android:elevation="15dp"
+    android:padding="5dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/cart_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/viewor"
+            android:text="Product Name"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/cartItem_image"
+            android:src="@drawable/rice"
+            android:layout_margin="3dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/viewor"
+            android:background="@color/colorPrimary"
+            android:layout_toEndOf="@+id/cartItem_image"/>
+
+        <TextView
+            android:id="@+id/cart_product_qunatity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/viewor"
+            android:layout_below="@id/cart_product_name"
+            android:text="Product Qunatity"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/cart_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cart_product_qunatity"
+           android:layout_centerHorizontal="true"
+            android:text="Product Price"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/viewor"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cart_product_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cart_product_price"
+            android:layout_alignParentStart="true"
+            android:text="date"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/cart_product_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cart_product_price"
+            android:layout_alignParentEnd="true"
+            android:text="time"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_search">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginTop="-150dp"
+            android:layout_marginStart="-18dp"
+            android:layout_marginEnd="-18dp"
+            android:src="@drawable/add_products_design" />
+        <TextView
+            android:id="@+id/snameProducts"
+            style="@style/Widget.AppCompat.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Store Name"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/snameProducts"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/scityProducts"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Store City - "
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/szipProducts"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/scityProducts"
+                android:text="szip"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            app:cardElevation="8dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="82dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/categorysear"
+                android:hint="Search"
+                android:textColorHint="#4d4d4d"
+                android:padding="10dp"
+                android:textColor="#4d4d4d"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat"
+                android:paddingStart="25dp"
+                android:background="@drawable/shape"
+                android:drawableEnd="@drawable/ic_baseline_search_24"
+                android:textSize="18dp"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative_search"
+        android:padding="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addNewRel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/ProductCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Cat"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ProductSubcat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:layout_toEndOf="@+id/ProductCat"
+                android:text="Sub Cat"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addproductRel"
+            android:layout_marginTop="10dp"
+                android:layout_below="@id/addNewRel"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+        android:id="@+id/addnewtxt"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:text="Add new Product?"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/addnewProduct"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:background="@drawable/button_style"
+                android:text="Add Product"
+                android:layout_centerHorizontal="true"
+                android:onClick="addNewProduct"
+                android:fontFamily="@font/montserrat"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/addnewtxt"
+                android:layout_marginStart="10dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addproductRel"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="60dp"
+            android:id="@+id/addProducts_recycler"/>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_shome">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/toolbarHome"
+            android:background="@color/colorText">
+
+        </androidx.appcompat.widget.Toolbar>
+        <TextView
+            android:id="@+id/snameHome"
+            style="@style/Widget.AppCompat.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+
+            android:text="Store Name"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/snameHome"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/scityHome"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+
+                android:fontFamily="@font/montserrat"
+                android:text="Store City - "
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/szipHome"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@id/scityHome"
+                android:fontFamily="@font/montserrat"
+                android:text="szip"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+            <TabHost android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@android:id/tabhost" xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical">
+
+                    <TabWidget android:layout_height="fill_parent" android:layout_width="fill_parent"  android:id="@android:id/tabs"/>
+
+                    <FrameLayout android:layout_height="fill_parent" android:layout_width="fill_parent"  android:id="@android:id/tabcontent"/>
+
+                </LinearLayout>
+
+            </TabHost>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/nav_view"
+        android:padding="1dp"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_shape"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_nav_menu"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

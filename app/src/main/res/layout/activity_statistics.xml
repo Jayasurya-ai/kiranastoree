@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Statistics">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/counterbackdesign"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstCount"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/countNearbytxt"
+                android:text="Nearby Customers"
+                android:fontFamily="@font/montserrat"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/countNearbytxt"
+                android:id="@+id/countNearby"
+                android:fontFamily="@font/montserrat"
+                android:text="0"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/counterbackdesign"
+            android:padding="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sales Statistics"
+                    android:id="@+id/Collectiontxt"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/button_style"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/montserrat"
+                android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+                android:paddingRight="15dp"
+                android:onClick="setDate"
+                android:textSize="17dp"
+                android:textColor="@android:color/white"
+                android:text="Choose Date" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button1"
+                android:text="@string/date_selected"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView3"
+                    android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/collectTotalMoneytxt"
+                    android:text="Today Sales : "
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#4d4d4d"
+                    android:layout_marginTop="20dp"
+                    android:textSize="22sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/collectTotalMoney"
+                        android:text=" 0"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="#4d4d4d"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@id/collectTotalMoneytxt"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/collectTotalMonthtxt"
+                        android:layout_below="@id/collectTotalMoneytxt"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Montly Sales : "
+                        android:textColor="#4d4d4d"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/collectTotalMonth"
+                        android:layout_below="@id/collectTotalMoney"
+                        android:text=" 0"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="#4d4d4d"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@id/collectTotalMonthtxt"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/collectTotalYeartxt"
+                        android:layout_below="@+id/collectTotalMonthtxt"
+                        android:text="Yearly Sales : "
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="#4d4d4d"
+                        android:layout_marginTop="20dp"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/collectTotaYear"
+                        android:layout_below="@+id/collectTotalMonth"
+                        android:text=" 0"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="#4d4d4d"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@id/collectTotalYeartxt"
+                        android:textSize="22sp"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

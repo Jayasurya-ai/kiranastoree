@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "940429707817",
+    "firebase_url": "https://kiranastore-90776.firebaseio.com",
+    "project_id": "kiranastore-90776",
+    "storage_bucket": "kiranastore-90776.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940429707817:android:0a99e379d72c99a46caa38",
+        "android_client_info": {
+          "package_name": "com.viba.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940429707817-fjpv4uuqmd2n2pnirse5bpi34c48re6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIImuHutMcXUnCtzQXY4I8H_wOCNhITIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940429707817-fjpv4uuqmd2n2pnirse5bpi34c48re6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940429707817:android:f08cd8e7bb2a09776caa38",
+        "android_client_info": {
+          "package_name": "com.viba.kiranastoree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940429707817-eimrb9vtdiepr8n30u0aumnre2961jn0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.viba.kiranastoree",
+            "certificate_hash": "5d043746846b5a8629d1b3f1b6ff71e90d9ec8d9"
+          }
+        },
+        {
+          "client_id": "940429707817-fjpv4uuqmd2n2pnirse5bpi34c48re6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIImuHutMcXUnCtzQXY4I8H_wOCNhITIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940429707817-fjpv4uuqmd2n2pnirse5bpi34c48re6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940429707817:android:eac5408f69ab61c06caa38",
+        "android_client_info": {
+          "package_name": "com.viba.vkart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940429707817-5o500ifpnlr4o5r31vflhlf2a6t9n81s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.viba.vkart",
+            "certificate_hash": "5d043746846b5a8629d1b3f1b6ff71e90d9ec8d9"
+          }
+        },
+        {
+          "client_id": "940429707817-fjpv4uuqmd2n2pnirse5bpi34c48re6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIImuHutMcXUnCtzQXY4I8H_wOCNhITIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940429707817-fjpv4uuqmd2n2pnirse5bpi34c48re6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
