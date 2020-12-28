@@ -13,7 +13,7 @@
 
     <item
         android:id="@+id/navigation_orders"
-        android:icon="@drawable/notification"
-        android:title="Notification"/>
+        android:icon="@drawable/store"
+        android:title="Profile"/>
 
 </menu>

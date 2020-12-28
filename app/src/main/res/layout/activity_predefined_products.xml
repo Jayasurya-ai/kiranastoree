@@ -18,6 +18,10 @@
         android:layout_marginBottom="5dp"
         app:cardElevation="1dp">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,7 +44,7 @@
                         android:layout_height="100dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:src="@drawable/stationary" />
+                        android:src="@drawable/shopimage" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -94,7 +98,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Quantity "
+                                android:text="Weight "
                                 android:layout_gravity="center"
                                 android:textStyle="bold"
                                 android:fontFamily="@font/montserrat"
@@ -108,7 +112,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="1dp"
                                 android:fontFamily="@font/montserrat"
-                                android:hint="Total Qty"
+                                android:hint="Total Wt"
                                 android:inputType="number"
                                 android:textSize="12sp" />
 
@@ -121,7 +125,7 @@
                                 android:textColor="@android:color/black"
                                 android:layout_marginStart="3dp"/>
                             <Spinner
-                                android:layout_width="match_parent"
+                                android:layout_width="100dp"
                                 android:layout_height="30dp"
                                 android:id="@+id/FixedQuant"
                                 android:layout_gravity="center"
@@ -129,6 +133,13 @@
                                 android:layout_marginStart="1dp"/>
 
 
+                            <ImageView
+                                android:layout_width="25sp"
+                                android:layout_height="25sp"
+                                android:src="@drawable/ic_baseline_edit"
+                                android:layout_marginStart="10sp"
+                                android:layout_marginTop="8dp"
+                                android:id="@+id/editpreProductsa"/>
 
 
                         </LinearLayout>
@@ -154,12 +165,11 @@
 
                             <Spinner
                                 android:id="@+id/spin_addProduct"
-                                android:layout_width="80dp"
+                                android:layout_width="100dp"
                                 android:layout_height="25dp"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="2dp"
-                                android:entries="@array/spin_quant"
-                                android:textAlignment="center" />
+                                android:layout_marginStart="3dp"
+                                android:entries="@array/spin_quant"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -226,7 +236,6 @@
                         android:visibility="gone"
                         android:padding="5dp"
                         android:background="@drawable/linear_backgroud"
-
                         android:layout_marginTop="8dp"
                         android:id="@+id/newlin2">
                         <LinearLayout
@@ -264,7 +273,7 @@
                                 android:textColor="@android:color/black"
                                 android:layout_marginStart="3dp"/>
                             <Spinner
-                                android:layout_width="match_parent"
+                                android:layout_width="100dp"
                                 android:layout_height="30dp"
                                 android:id="@+id/FixedQuant2"
                                 android:layout_gravity="center"
@@ -272,6 +281,13 @@
                                 android:layout_marginStart="1dp"/>
 
 
+                            <ImageView
+                                android:layout_width="25sp"
+                                android:layout_height="25sp"
+                                android:src="@drawable/ic_baseline_edit"
+                                android:layout_marginStart="10sp"
+                                android:layout_marginTop="8dp"
+                                android:id="@+id/editpreProductsb"/>
 
                         </LinearLayout>
                         <LinearLayout
@@ -294,13 +310,12 @@
                                 android:textSize="12sp" />
 
                             <Spinner
-                                android:layout_width="80dp"
+                                android:layout_width="100dp"
                                 android:layout_height="25dp"
                                 android:id="@+id/spin_addProduct2"
                                 android:entries="@array/spin_quant"
                                 android:layout_gravity="center"
-                                android:textAlignment="center"
-                                android:layout_marginStart="2dp" />
+                                android:layout_marginStart="3dp" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -347,7 +362,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:background="@drawable/button_style"
                                 android:fontFamily="@font/montserrat"
-                                android:text="Add"
+                                android:text="Save"
                                 android:textColor="@android:color/white"
                                 android:textSize="15sp" />
                             <Button
@@ -416,7 +431,7 @@
                             android:textColor="@android:color/black"
                             android:layout_marginStart="3dp"/>
                         <Spinner
-                            android:layout_width="match_parent"
+                            android:layout_width="100dp"
                             android:layout_height="30dp"
                             android:id="@+id/FixedQuant3"
                             android:layout_gravity="center"
@@ -424,6 +439,13 @@
                             android:layout_marginStart="1dp"/>
 
 
+                        <ImageView
+                            android:layout_width="25sp"
+                            android:layout_height="25sp"
+                            android:src="@drawable/ic_baseline_edit"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/editpreProductsc"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -446,13 +468,12 @@
                             android:textSize="12sp" />
 
                         <Spinner
-                            android:layout_width="80dp"
+                            android:layout_width="100dp"
                             android:layout_height="25dp"
                             android:id="@+id/spin_addProduct3"
                             android:entries="@array/spin_quant"
                             android:layout_gravity="center"
-                            android:textAlignment="center"
-                            android:layout_marginStart="2dp" />
+                            android:layout_marginStart="3dp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -489,7 +510,7 @@
                             android:layout_centerHorizontal="true"
                             android:background="@drawable/button_style"
                             android:fontFamily="@font/montserrat"
-                            android:text="Add"
+                            android:text="Save"
                             android:textColor="@android:color/white"
                             android:textSize="15sp" />
                         <Button
@@ -512,11 +533,28 @@
 
 
 
+
             </LinearLayout>
 
 
 
         </LinearLayout>
 
+        </ScrollView>
     </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/goBackproducts"
+        android:text="Add products"
+        android:background="@drawable/button_style"
+        android:textSize="15sp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="10dp"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

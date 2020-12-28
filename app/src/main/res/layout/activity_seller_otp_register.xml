@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context=".OtpRegister"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_container">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/registerbtn" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/olologo"-->
+<!--                android:layout_width="103dp"-->
+<!--                android:layout_height="27dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="80dp"-->
+<!--                android:src="@drawable/olokartlogoblack" />-->
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_below="@id/textView5"
+                android:gravity="center"
+                android:text="Register"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Olokart Business"
+                android:layout_marginTop="60dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/cardVerify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12sp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="45sp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/spin_kitVerify"
+                        style="@style/SpinKitView.DoubleBounce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        app:SpinKit_Color="#47a626" />
+
+                    <TextView
+                        android:id="@+id/verifyotp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Welcome!"
+                        android:fontFamily="@font/montserrat"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textf"
+                        android:layout_width="209dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/verifyotp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:inputType="textMultiLine"
+                        android:text="Regsiter and get shopping!"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/linReg"
+                        android:layout_below="@+id/textf">
+
+
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/usernameReg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:fontFamily="@font/montserrat"
+                                android:maxLines="1"
+                                android:hint="Store Name"
+                                android:singleLine="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp">
+
+                            </com.google.android.material.textfield.TextInputEditText>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                        <requestFocus />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp">
+
+                            <EditText
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/editCode"
+                                android:textSize="12dp"
+                                />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/numer"
+                                android:inputType="number"
+                                android:textSize="12dp"
+                                android:layout_toEndOf="@id/editCode"
+                                android:layout_marginStart="10dp"
+                                android:hint="Mobile Number"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/continueReg"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="327dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linReg"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15sp"
+                        android:layout_marginEnd="25sp"
+                        android:layout_marginBottom="30sp"
+                        android:background="@drawable/btnstylegreen"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Continue"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

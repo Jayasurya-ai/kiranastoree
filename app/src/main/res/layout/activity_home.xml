@@ -8,15 +8,11 @@
     tools:showIn="@layout/app_bar_main"
     tools:context=".HomeActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-    <RelativeLayout
+       <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/relative_shome">
+
 
 
         <androidx.appcompat.widget.Toolbar
@@ -26,7 +22,38 @@
             android:background="@color/colorText">
 
         </androidx.appcompat.widget.Toolbar>
-        <TextView
+           <TabHost
+               android:id="@android:id/tabhost"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/toolbarHome"
+               android:layout_alignParentStart="true"
+               android:padding="4dp">
+
+               <LinearLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:orientation="vertical">
+
+                   <TabWidget
+                       android:id="@android:id/tabs"
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="0" />
+
+                   <FrameLayout
+                       android:id="@android:id/tabcontent"
+                       android:layout_width="fill_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1" />
+
+               </LinearLayout>
+
+           </TabHost>
+
+
+
+           <TextView
             android:id="@+id/snameHome"
             style="@style/Widget.AppCompat.TextView"
             android:layout_width="wrap_content"
@@ -54,41 +81,15 @@
                 android:layout_marginTop="1dp"
 
                 android:fontFamily="@font/montserrat"
-                android:text="Store City - "
+                android:text="Store City"
                 android:textColor="@android:color/white"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/szipHome"
-                style="@style/Widget.AppCompat.TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:layout_toEndOf="@id/scityHome"
-                android:fontFamily="@font/montserrat"
-                android:text="szip"
-                android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="@android:color/white"
                 android:textSize="12sp" />
 
         </RelativeLayout>
-    </RelativeLayout>
 
-            <TabHost android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@android:id/tabhost" xmlns:android="http://schemas.android.com/apk/res/android">
-
-                <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical">
-
-                    <TabWidget android:layout_height="fill_parent" android:layout_width="fill_parent"  android:id="@android:id/tabs"/>
-
-                    <FrameLayout android:layout_height="fill_parent" android:layout_width="fill_parent"  android:id="@android:id/tabcontent"/>
-
-                </LinearLayout>
-
-            </TabHost>
-    </LinearLayout>
+      </RelativeLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"

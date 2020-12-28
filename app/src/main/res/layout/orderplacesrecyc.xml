@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="itemname"
+        android:layout_marginStart="5dp"
+        android:id="@+id/i_name"
+        android:inputType="textMultiLine"
+        android:textColor="#42a626"
+        android:fontFamily="@font/montserrat"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kg"
+        android:id="@+id/pro_qua"
+        android:textSize="15sp"
+        android:layout_toEndOf="@+id/i_name"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="2"
+        android:layout_toEndOf="@+id/pro_qua"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:id="@+id/no_items"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs"
+        android:textSize="17sp"
+        android:id="@+id/prprice"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:layout_marginEnd="10dp"/>
+
+
+</RelativeLayout>

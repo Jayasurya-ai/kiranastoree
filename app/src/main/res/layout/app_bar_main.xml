@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <include layout="@layout/activity_home" />
-
-
+    <include layout="@layout/activity_home"
+        android:id="@+id/activeHome"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

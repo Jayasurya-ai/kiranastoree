@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.olokart.vendors.OtpRegister">
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="275dp"-->
+<!--                    android:layout_marginTop="-100dp"-->
+<!--                    android:layout_marginStart="-50dp"-->
+<!--                    android:layout_marginEnd="-50dp"-->
+<!--                    android:src="@drawable/register_designb" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="275dp"-->
+<!--                    android:layout_marginTop="-110dp"-->
+<!--                    android:layout_marginStart="-50dp"-->
+<!--                    android:layout_marginEnd="-50dp"-->
+<!--                    android:src="@drawable/register_designa" />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="275dp"-->
+<!--                    android:layout_marginTop="-120dp"-->
+<!--                    android:layout_marginStart="-50dp"-->
+<!--                    android:layout_marginEnd="-50dp"-->
+<!--                    android:src="@drawable/register_design" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/title_seller"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:fontFamily="@font/montserrat"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Vendor \n Registration"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="28dp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:id="@+id/viewRegister"-->
+<!--                    android:layout_below="@id/title_seller"-->
+<!--                    android:background="@android:color/white"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginStart="160dp"-->
+<!--                    android:layout_marginEnd="160dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/viewRegister"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:fontFamily="@font/montserrat"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Please enter all details below"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="15sp" />-->
+<!--            </RelativeLayout>-->
+<!--            -->
+<!--            &lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:fontFamily="@font/montserrat"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:text="Store Email Address"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textColor="#47A626"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textSize="21dp" />&ndash;&gt;-->
+
+<!--            &lt;!&ndash;            <EditText&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:id="@+id/seller_email"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_below="@+id/seller_name"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:hint=" Enter Email Address"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:drawablePadding="10dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginEnd="30dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginStart="30dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:fontFamily="@font/montserrat"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:padding="10dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:drawableLeft="@drawable/ic_email"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:background="@drawable/edittextbackground"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:inputType="textEmailAddress"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textSize="18sp" />&ndash;&gt;-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:fontFamily="@font/montserrat"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Store Mobile Number"-->
+<!--                android:textColor="#47A626"-->
+<!--                android:textSize="21dp" />-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <EditText-->
+<!--                    android:id="@+id/editTextCountryCode"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:inputType="phone"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginStart="40dp"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="+91"-->
+<!--                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"-->
+<!--                    android:textColor="@android:color/black" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/seller_contact"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint=" Enter Mobile Number"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:drawableLeft="@drawable/ic_phone"-->
+<!--                android:fontFamily="@font/montserrat"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginEnd="30dp"-->
+<!--                android:layout_marginStart="80dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:padding="10dp"-->
+<!--                android:inputType="number"-->
+<!--                android:textSize="18sp" />-->
+<!--            </RelativeLayout>-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:fontFamily="@font/montserrat"-->
+<!--                android:gravity="center"-->
+<!--                android:text="One Time Password"-->
+<!--                android:textColor="#47A626"-->
+<!--                android:textSize="21dp" />-->
+
+
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextCode"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:hint="Code"-->
+<!--                android:layout_toEndOf="@+id/editTextCountryCode"-->
+<!--                android:fontFamily="@font/montserrat"-->
+<!--                android:textSize="15sp"-->
+
+<!--                android:padding="10dp"-->
+<!--                android:layout_margin="30dp"-->
+<!--                android:inputType="phone"-->
+<!--                android:maxLines="1"-->
+<!--                android:singleLine="true"-->
+<!--                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"-->
+<!--                android:textColor="@android:color/black">-->
+<!--                <requestFocus />-->
+<!--            </EditText>-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_margin="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relUploadtxt">
+
+
+                <TextView
+                    android:id="@+id/upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Upload Store Image :"
+                    android:textColor="#47A626"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/upload_image"
+                    android:src="@drawable/upload"
+                    android:layout_toEndOf="@+id/upload"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"/>
+
+    </RelativeLayout>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/select_shop_image"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/relUploadtxt"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/seller_register_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_shop_image"
+                android:background="@drawable/button_style"
+                android:layout_gravity="center"
+                android:text="Register"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="false"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllProducts">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/totalRelative">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deliveryUsernamenew"
+            android:text="Username"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@id/deliveryUserphone"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deliveryUserphone"
+            android:text=""
+            android:layout_margin="7dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="13sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#4d4d4d"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deliverAtnew"
+            android:text="Deliver at:"
+            android:layout_below="@id/deliveryUsernamenew"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deliveryUserAddrnnew"
+            android:text=""
+            android:layout_margin="7dp"
+            android:layout_toEndOf="@id/deliverAtnew"
+            android:layout_below="@id/deliveryUserphone"
+            android:textSize="13sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#4d4d4d"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment mode :"
+            android:layout_below="@id/deliveryUserAddrnnew"
+            android:layout_margin="7dp"
+            android:textSize="13sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#4d4d4d"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homenewPaymode"
+            android:layout_margin="7dp"
+            android:layout_below="@id/deliverAtnew"
+            android:layout_alignParentEnd="true"
+            android:textSize="13sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#4d4d4d"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ordersplacedRecycler"
+        android:layout_below="@id/homenewPaymode"
+        android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/totalRelative"
+        android:padding="10dp"
+        android:background="#42a626">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price:"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:id="@+id/tosk" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/bagrs"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

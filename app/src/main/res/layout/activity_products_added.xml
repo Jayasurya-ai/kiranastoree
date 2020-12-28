@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/frameProducts"
     tools:context=".ProductsAdded">
 
 
-    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/spin_kit"
         style="@style/SpinKitView.Circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       android:layout_gravity="center"
+        android:layout_gravity="center"
         app:SpinKit_Color="@android:color/holo_green_dark" />
     <TextView
         android:layout_width="match_parent"
@@ -48,7 +50,7 @@
                         android:textColor="#4d4d4d"
                         android:fontFamily="@font/montserrat"
                         android:textSize="17sp"
-                        android:drawableStart="@drawable/ic_search"
+                        android:drawableStart="@drawable/places_ic_search"
                         android:drawablePadding="10dp"
                         android:layout_alignParentStart="true"
                         android:padding="10dp"

@@ -38,7 +38,7 @@
                 android:layout_height="75dp"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="10dp"
-                android:src="@drawable/stationary" />
+                android:src="@drawable/shopimage" />
 
 
                 <TextView

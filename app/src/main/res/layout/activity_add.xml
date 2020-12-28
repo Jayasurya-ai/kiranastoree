@@ -48,24 +48,12 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/montserrat"
-                        android:text="Store City - "
+                        android:text="Store City"
                         android:textColor="@android:color/white"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                         android:textSize="15sp" />
-                    <TextView
-                        android:id="@+id/szipCat"
-                        style="@style/Widget.AppCompat.TextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_toEndOf="@id/scityCat"
-                        android:text="szip"
-                        android:textColor="@android:color/white"
-                        android:textAlignment="center"
-                        android:fontFamily="@font/montserrat"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="15sp" />
+
                     </RelativeLayout>
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"

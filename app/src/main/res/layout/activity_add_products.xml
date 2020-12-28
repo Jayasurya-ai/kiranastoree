@@ -17,7 +17,7 @@
             android:layout_marginTop="-150dp"
             android:layout_marginStart="-18dp"
             android:layout_marginEnd="-18dp"
-            android:src="@drawable/add_products_design" />
+            android:src="@drawable/add_products_design"/>
         <TextView
             android:id="@+id/snameProducts"
             style="@style/Widget.AppCompat.TextView"
@@ -44,22 +44,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/montserrat"
-                android:text="Store City - "
+                android:text="Store City"
                 android:textColor="@android:color/white"
                 android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="15sp" />
-            <TextView
-                android:id="@+id/szipProducts"
-                style="@style/Widget.AppCompat.TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_toEndOf="@id/scityProducts"
-                android:text="szip"
-                android:textColor="@android:color/white"
-                android:textAlignment="center"
-                android:fontFamily="@font/montserrat"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -89,7 +76,7 @@
                 android:textSize="18dp"/>
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/relative_search"
@@ -168,9 +155,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/addproductRel"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="5dp"
             android:id="@+id/addProducts_recycler"/>
 
     </RelativeLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 </RelativeLayout>

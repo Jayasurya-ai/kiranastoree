@@ -78,7 +78,6 @@
                 android:fontFamily="@font/montserrat"
                 android:drawableRight="@drawable/ic_baseline_calendar_today_24"
                 android:paddingRight="15dp"
-                android:onClick="setDate"
                 android:textSize="17dp"
                 android:textColor="@android:color/white"
                 android:text="Choose Date" />
@@ -136,7 +135,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/collectTotalMonth"
                         android:layout_below="@id/collectTotalMoney"
-                        android:text=" 0"
+                        android:text="0"
                         android:fontFamily="@font/montserrat"
                         android:textColor="#4d4d4d"
                         android:layout_marginTop="20dp"

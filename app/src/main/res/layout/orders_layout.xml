@@ -24,13 +24,13 @@
             android:text="Product Name"
             android:fontFamily="@font/montserrat"
             android:textColor="@android:color/black"
-            android:textSize="20sp"
+            android:textSize="17sp"
             android:textStyle="bold" />
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:id="@+id/cartItem_image"
-            android:src="@drawable/rice"
+            android:src="@drawable/shopimage"
             android:layout_margin="3dp"/>
         <View
             android:layout_width="1dp"
@@ -53,7 +53,7 @@
             android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
             android:textColor="@android:color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             />
 
         <TextView
@@ -69,7 +69,7 @@
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/cart_product_date"
@@ -83,7 +83,7 @@
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:textColor="@android:color/black"
-            android:textSize="17sp"/>
+            android:textSize="14sp"/>
 
         <TextView
             android:id="@+id/cart_product_time"
@@ -96,6 +96,6 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
             android:textColor="@android:color/black"
-            android:textSize="17sp" />
+            android:textSize="14sp" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

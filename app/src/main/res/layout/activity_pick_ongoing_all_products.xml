@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PickOngoingAllProducts">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relPickupOngoing">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pickupUsernameongoing"
+            android:text="Username"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@id/pickupUserphoneongoing"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pickupUserphoneongoing"
+            android:text=""
+            android:layout_margin="7dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="13sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#4d4d4d"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pickupongoingPaymodetxt"
+            android:text="Payment mode :"
+            android:layout_below="@id/pickupUsernameongoing"
+            android:layout_margin="7dp"
+            android:textSize="13sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#4d4d4d"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pickupongoingPaymode"
+            android:text=""
+            android:layout_margin="7dp"
+            android:layout_below="@id/pickupUserphoneongoing"
+            android:layout_alignParentEnd="true"
+            android:textSize="13sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#4d4d4d"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/pricepik">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Picked Up"
+        android:id="@+id/pickedup"
+        android:textSize="10sp"
+        android:background="@drawable/btnstylegreen"
+        android:textColor="@android:color/white"
+        android:layout_alignParentEnd="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"/>
+    </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pordersplacedRecycler2"
+            android:layout_below="@id/relPickupOngoing"
+            android:layout_margin="5dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pricepik"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#42a626">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price:"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:id="@+id/ptosk2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:id="@+id/pbagrs2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+               />
+        </RelativeLayout>
+    </RelativeLayout>
